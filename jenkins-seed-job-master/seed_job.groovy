@@ -3,7 +3,7 @@ job('admin-seed-job') {
     scm{
         git{
             remote{
-              url("")
+              url('http://github.com/sivascripts/jenkins.git')
               credentials("siva_credentials")
             }
             branch('*/main')
