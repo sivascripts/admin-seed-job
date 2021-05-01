@@ -12,7 +12,7 @@ job('admin-seed-job') {
     }
     steps {
         dsl {
-           external('jobs/**/*.groovy')
+           external('jenkins-csa-jobs-master/jobs/**/*.groovy')
            removeAction('DELETE')
            removeViewAction('DELETE')
 
